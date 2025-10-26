@@ -5,18 +5,77 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="Studio Webux - DevOps & Development Solutions"
+            content="Studio Webux - DevOps solutions, infrastructure consulting, and automation services. AWS, OVH, Hetzner cloud expertise. Based in Sainte-Thérèse, Québec."
         />
-        <title>Studio Webux - DevOps & Development</title>
+        <meta name="keywords" content="DevOps, AWS, OVH, Hetzner, Ansible, CI/CD, Infrastructure, Cloud, Monitoring, Automation, Québec" />
+        <meta name="author" content="Studio Webux" />
+        <title>Studio Webux - DevOps & Infrastructure Solutions | Québec</title>
+
+        <!-- Open Graph / Social Media -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Studio Webux - DevOps & Infrastructure Solutions" />
+        <meta property="og:description" content="AWS, OVH, Hetzner cloud solutions. Infrastructure consulting, automation, and DevOps services in Québec." />
+        <meta property="og:image" content="https://studiowebux.com/assets/img/logo.svg" />
+        <meta property="og:url" content="https://studiowebux.com" />
+        <meta property="og:locale" content="en_CA" />
+        <meta property="og:locale:alternate" content="fr_CA" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Studio Webux - DevOps & Infrastructure Solutions" />
+        <meta name="twitter:description" content="AWS, OVH, Hetzner cloud solutions. Infrastructure consulting and automation services." />
+        <meta name="twitter:image" content="https://studiowebux.com/assets/img/logo.svg" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+        <link rel="alternate icon" type="image/png" href="assets/img/logo-studio-webux.png" />
+
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
             rel="stylesheet"
         />
+
+        <!-- Stylesheet -->
         <link rel="stylesheet" href="style.css" />
+
+        <!-- Structured Data for SEO -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Studio Webux",
+            "description": "DevOps solutions, infrastructure consulting, and automation services",
+            "url": "https://studiowebux.com",
+            "logo": "https://studiowebux.com/assets/img/logo.svg",
+            "image": "https://studiowebux.com/assets/img/logo.svg",
+            "telephone": "",
+            "email": "contact@studiowebux.com",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Sainte-Thérèse",
+                "addressRegion": "QC",
+                "addressCountry": "CA"
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "Canada"
+            },
+            "sameAs": [
+                "https://github.com/studiowebux",
+                "https://www.linkedin.com/in/tommy-gingras-125262123"
+            ],
+            "knowsAbout": ["DevOps", "AWS", "OVH", "Hetzner", "Ansible", "CI/CD", "Infrastructure", "Cloud Computing", "Monitoring", "Automation"],
+            "serviceType": ["Cloud Infrastructure", "DevOps Automation", "Infrastructure Consulting", "Monitoring and Observability"]
+        }
+        </script>
     </head>
     <body>
+        <!-- Skip Navigation for Accessibility -->
+        <a href="#services" class="skip-link">Skip to main content</a>
+
         <!-- Language & Theme Switchers -->
         <div class="controls">
             <div class="lang-switcher">
@@ -170,6 +229,7 @@
                                 src="assets/img/ampoule.png"
                                 alt="Innovation"
                                 class="why-image"
+                                loading="lazy"
                             />
                         </div>
                     </div>
@@ -256,7 +316,7 @@
         <!-- Contact Section -->
         <section id="contact">
             <div class="container">
-                <h2 data-en="Get In Touch" data-fr="Contactez-nous">
+                <h2 data-en="Get In Touch" data-fr="Nous contacter">
                     Get In Touch
                 </h2>
                 <p
