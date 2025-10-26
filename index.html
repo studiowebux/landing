@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Studio Webux - DevOps & Development Solutions"
+        />
+        <title>Studio Webux - DevOps & Development</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- Language & Theme Switchers -->
+        <div class="controls">
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+            </div>
+            <button
+                class="theme-toggle"
+                id="theme-toggle"
+                aria-label="Toggle theme"
+            >
+                <span class="theme-icon light-icon">Light</span>
+                <span class="theme-icon dark-icon">Dark</span>
+            </button>
+        </div>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container">
+                <div class="logo-container">
+                    <img
+                        src="assets/img/logo.svg"
+                        alt="Studio Webux Logo"
+                        class="logo"
+                    />
+                </div>
+                <h1
+                    class="hero-title"
+                    data-en="Studio Webux"
+                    data-fr="Studio Webux"
+                >
+                    Studio Webux
+                </h1>
+                <p
+                    class="hero-subtitle"
+                    data-en="DevOps Solutions and Development Automation"
+                    data-fr="Solutions DevOps et Automatisation de Développement"
+                >
+                    DevOps Solutions and Development Automation
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <h2 data-en="What We Offer" data-fr="Ce que nous offrons">
+                    What We Offer
+                </h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3
+                            data-en="Cloud & Infrastructure"
+                            data-fr="Cloud et Infrastructure"
+                        >
+                            Cloud & Infrastructure
+                        </h3>
+                        <p
+                            data-en="<strong>AWS, OVH, Hetzner</strong> cloud solutions. <strong>Linux/macOS</strong> environments, <strong>baremetal</strong>, <strong>VMs</strong>, and <strong>containers</strong>. <strong>Monitoring and observability</strong> setup."
+                            data-fr="Solutions cloud <strong>AWS, OVH, Hetzner</strong>. Environnements <strong>Linux/macOS</strong>, <strong>baremetal</strong>, <strong>VMs</strong> et <strong>conteneurs</strong>. Configuration <strong>monitoring et observabilité</strong>."
+                        >
+                            <strong>AWS, OVH, Hetzner</strong> cloud solutions.
+                            <strong>Linux/macOS</strong> environments,
+                            <strong>baremetal</strong>, <strong>VMs</strong>, and
+                            <strong>containers</strong>. <strong>Monitoring and observability</strong> setup.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3
+                            data-en="Automation & DevOps"
+                            data-fr="Automatisation et DevOps"
+                        >
+                            Automation & DevOps
+                        </h3>
+                        <p
+                            data-en="<strong>Ansible</strong> playbooks, <strong>Bash</strong> scripting, and <strong>CI/CD pipelines</strong>. <strong>Configuration management</strong> and <strong>workflow automation</strong> that scales."
+                            data-fr="Playbooks <strong>Ansible</strong>, scripts <strong>Bash</strong> et <strong>pipelines CI/CD</strong>. <strong>Gestion de configuration</strong> et <strong>automatisation de workflows</strong> évolutifs."
+                        >
+                            <strong>Ansible</strong> playbooks, <strong>Bash</strong> scripting,
+                            and <strong>CI/CD pipelines</strong>. <strong>Configuration
+                            management</strong> and <strong>workflow automation</strong> that scales.
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <h3
+                            data-en="Infrastructure Consulting"
+                            data-fr="Consultation en Infrastructure"
+                        >
+                            Infrastructure Consulting
+                        </h3>
+                        <p
+                            data-en="<strong>Architecture</strong> design and review, <strong>migration strategies</strong> (<strong>legacy</strong> to modern, <strong>on-prem</strong> to cloud), and <strong>performance optimization</strong>."
+                            data-fr="Conception et révision d'<strong>architecture</strong>, <strong>stratégies de migration</strong> (<strong>legacy</strong> vers moderne, <strong>on-prem</strong> vers cloud) et <strong>optimisation de performance</strong>."
+                        >
+                            <strong>Architecture</strong> design and review,
+                            <strong>migration strategies</strong> (<strong>legacy</strong> to
+                            modern, <strong>on-prem</strong> to cloud), and
+                            <strong>performance optimization</strong>.
+                        </p>
+                    </div>
+                </div>
+                <p class="services-note" data-en="Need something specific? Let's talk." data-fr="Besoin de quelque chose de spécifique? Parlons-en.">Need something specific? Let's talk.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2 data-en="Why Us" data-fr="Pourquoi nous">Why Us</h2>
+                <div class="why-us-grid">
+                    <div class="why-us-left">
+                        <div class="why-item">
+                            <h3
+                                data-en="Complete Perspective"
+                                data-fr="Perspective complète"
+                            >
+                                Complete Perspective
+                            </h3>
+                            <p
+                                data-en="From programming to infrastructure, cloud to hardware, we understand the <strong>full stack</strong> and bring technical depth to every challenge."
+                                data-fr="De la <strong>programmation à l'infrastructure, du cloud au hardware</strong>, nous comprenons le <strong>full stack</strong> et apportons une expertise technique à chaque défi."
+                            >
+                                From programming to infrastructure, cloud to
+                                hardware, we understand the
+                                <strong>full stack</strong> and bring technical
+                                depth to every challenge.
+                            </p>
+                        </div>
+                        <div class="why-item">
+                            <h3
+                                data-en="Developer Focus"
+                                data-fr="Focus développeur"
+                            >
+                                Developer Focus
+                            </h3>
+                            <p
+                                data-en="We prioritize <strong>developer productivity</strong> and experience. Our solutions let teams focus on <strong>features</strong>, not fighting with tools and infrastructure."
+                                data-fr="Nous priorisons la <strong>productivité</strong> et l'expérience des développeurs. Nos solutions permettent aux équipes de se concentrer sur les <strong>fonctionnalités</strong>, pas sur les outils et l'infrastructure."
+                            >
+                                We prioritize
+                                <strong>developer productivity</strong> and
+                                experience. Our solutions let teams focus on
+                                <strong>features</strong>, not fighting with
+                                tools and infrastructure.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="why-us-center">
+                        <div class="why-image-container">
+                            <img
+                                src="assets/img/ampoule.png"
+                                alt="Innovation"
+                                class="why-image"
+                            />
+                        </div>
+                    </div>
+                    <div class="why-us-right">
+                        <div class="why-item">
+                            <h3
+                                data-en="Smooth Transitions"
+                                data-fr="Transitions fluides"
+                            >
+                                Smooth Transitions
+                            </h3>
+                            <p
+                                data-en="Whether working with legacy systems or modern platforms, we ensure <strong>seamless integration</strong> with <strong>minimal disruption</strong>."
+                                data-fr="Que ce soit avec des systèmes legacy ou des plateformes modernes, nous assurons <strong>une intégration transparente</strong> avec <strong>un minimum de perturbations</strong>."
+                            >
+                                Whether working with legacy systems or modern
+                                platforms, we ensure
+                                <strong>seamless integration</strong> with
+                                <strong>minimal disruption</strong>.
+                            </p>
+                        </div>
+                        <div class="why-item">
+                            <h3
+                                data-en="Team Independence"
+                                data-fr="Autonomie de l'équipe"
+                            >
+                                Team Independence
+                            </h3>
+                            <p
+                                data-en="We build solutions and <strong>train your team</strong> for independence, creating <strong>transparent processes</strong> that last."
+                                data-fr="Nous construisons des solutions et <strong>formons votre équipe</strong> pour l'autonomie, créant des <strong>processus transparents</strong> qui durent."
+                            >
+                                We build solutions and
+                                <strong>train your team</strong> for
+                                independence, creating
+                                <strong>transparent processes</strong> that
+                                last.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Links Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 data-en="Projects & Links" data-fr="Projets et Liens">
+                    Projects & Links
+                </h2>
+                <div class="links-grid">
+                    <a
+                        href="https://github.com/studiowebux"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="link-card"
+                    >
+                        <h3>GitHub</h3>
+                        <p
+                            data-en="Check out our open source projects and contributions"
+                            data-fr="Consultez nos projets open source et contributions"
+                        >
+                            Check out our open source projects and contributions
+                        </p>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/tommy-gingras-125262123"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="link-card"
+                    >
+                        <h3>LinkedIn</h3>
+                        <p
+                            data-en="Connect with us professionally"
+                            data-fr="Connectez-vous avec nous professionnellement"
+                        >
+                            Connect with us professionally
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 data-en="Get In Touch" data-fr="Contactez-nous">
+                    Get In Touch
+                </h2>
+                <p
+                    class="contact-text"
+                    data-en="Ready to streamline your operations?"
+                    data-fr="Prêt à optimiser vos opérations?"
+                >
+                    Ready to streamline your operations?
+                </p>
+                <a href="mailto:contact@studiowebux.com" class="cta-button"
+                    >contact@studiowebux.com</a
+                >
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>
+                    &copy; 2018-<span id="year"></span> Studio Webux |
+                    Sainte-Thérèse, Québec
+                </p>
+                <p>
+                    <span
+                        data-en="All rights reserved."
+                        data-fr="Tous droits réservés."
+                        >All rights reserved.</span
+                    >
+                </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
