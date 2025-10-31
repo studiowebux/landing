@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Studio Webux Portfolio - Explore our projects, experiments, and open source contributions."
+        />
+        <meta name="keywords" content="Portfolio, Projects, Open Source, DevOps, Development, Studio Webux" />
+        <meta name="author" content="Studio Webux" />
+        <title>Portfolio - Studio Webux | Projects & Experiments</title>
+
+        <!-- Open Graph / Social Media -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Studio Webux Portfolio - Projects & Experiments" />
+        <meta property="og:description" content="Explore our projects, experiments, and open source contributions." />
+        <meta property="og:image" content="https://studiowebux.com/assets/img/logo.svg" />
+        <meta property="og:url" content="https://studiowebux.com/portfolio.html" />
+        <meta property="og:locale" content="en_CA" />
+        <meta property="og:locale:alternate" content="fr_CA" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Studio Webux Portfolio - Projects & Experiments" />
+        <meta name="twitter:description" content="Explore our projects, experiments, and open source contributions." />
+        <meta name="twitter:image" content="https://studiowebux.com/assets/img/logo.svg" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
+        <link rel="alternate icon" type="image/png" href="assets/img/logo-studio-webux.png" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="portfolio.css" />
+    </head>
+    <body>
+        <!-- Skip Navigation for Accessibility -->
+        <a href="#portfolio-content" class="skip-link">Skip to main content</a>
+
+        <!-- Language & Theme Switchers -->
+        <div class="controls">
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+            </div>
+            <button
+                class="theme-toggle"
+                id="theme-toggle"
+                aria-label="Toggle theme"
+            >
+                <span class="theme-icon light-icon">Light</span>
+                <span class="theme-icon dark-icon">Dark</span>
+            </button>
+        </div>
+
+        <!-- Header -->
+        <header class="portfolio-header">
+            <div class="container">
+                <a href="index.html" class="back-link" aria-label="Back to home">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    <span data-en="Back to Home" data-fr="Retour à l'accueil">Back to Home</span>
+                </a>
+                <h1 data-en="Portfolio" data-fr="Portfolio">Portfolio</h1>
+                <p class="portfolio-subtitle" data-en="Projects, experiments, and random stuff we're building" data-fr="Projets, expérimentations et trucs aléatoires que nous construisons">
+                    Projects, experiments, and random stuff we're building
+                </p>
+            </div>
+        </header>
+
+        <!-- Tag Filters -->
+        <section id="tag-filter-section">
+            <div class="container">
+                <h2 data-en="Filter by Tag" data-fr="Filtrer par étiquette">Filter by Tag</h2>
+                <div id="tag-filters" class="tag-filters">
+                    <!-- Dynamically generated filter buttons will be inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Content -->
+        <section id="portfolio-content">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- Project cards will be dynamically generated from projects.json -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>
+                    &copy; 2018-<span id="year"></span> Studio Webux |
+                    Sainte-Thérèse, Québec
+                </p>
+                <p>
+                    <span
+                        data-en="All rights reserved."
+                        data-fr="Tous droits réservés."
+                        >All rights reserved.</span
+                    >
+                </p>
+            </div>
+        </footer>
+
+        <!-- Image Modal for Screenshot Zoom -->
+        <div id="image-modal" class="image-modal" aria-hidden="true">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <img src="" alt="" class="modal-image" />
+        </div>
+
+        <script src="script.js"></script>
+        <script src="portfolio.js"></script>
+    </body>
+</html>

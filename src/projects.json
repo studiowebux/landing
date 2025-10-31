@@ -1,0 +1,214 @@
+{
+  "projects": [
+    {
+      "name": "Obsidian Spotify Link",
+      "tags": ["TypeScript", "Obsidian"],
+      "screenshots": [],
+      "videos": [],
+      "links": {
+        "github": "https://github.com/studiowebux/obsidian-spotify-link"
+      },
+      "description": {
+        "en": "Obsidian.md plugin to simplify the task of connecting music and creative thoughts. Connect your Spotify account and link the currently playing song to your note.",
+        "fr": "Plugin Obsidian.md pour simplifier la tâche de connexion entre la musique et les pensées créatives. Connectez votre compte Spotify et liez la chanson en cours de lecture à votre note."
+      }
+    },
+    {
+      "name": "Obsidian FinDoc",
+      "tags": ["TypeScript", "Obsidian"],
+      "description": {
+        "en": "Plugin to edit a CSV file in Obsidian. The goal is to show charts using the CSV file as the data source, everything done in Obsidian with the possibility to use external software to prepare the CSV as well!",
+        "fr": "Plugin pour éditer un fichier CSV dans Obsidian. L'objectif est d'afficher des graphiques en utilisant le fichier CSV comme source de données, le tout fait dans Obsidian avec la possibilité d'utiliser un logiciel externe pour préparer le CSV également!"
+      },
+      "links": {
+        "github": "https://github.com/studiowebux/obsidian-findoc"
+      }
+    },
+    {
+      "name": "Time Ago",
+      "tags": ["TypeScript", "Deno", "CLI", "Tool"],
+      "description": {
+        "en": "Deno CLI tool to help with epoch timestamps.",
+        "fr": "Outil CLI Deno pour aider avec les horodatages epoch."
+      },
+      "links": {
+        "github": "https://github.com/studiowebux/timeago"
+      }
+    },
+    {
+      "name": "REST CLI",
+      "tags": ["TypeScript", "Deno", "CLI", "Tool"],
+      "description": {
+        "en": "REST CLI + TUI - A way to test your API.",
+        "fr": "REST CLI + TUI - Une façon de tester votre API."
+      },
+      "links": {
+        "github": "https://github.com/studiowebux/restcli",
+        "website": "https://restcli.com"
+      }
+    },
+    {
+      "name": "Debug CLI",
+      "tags": ["TypeScript", "Deno", "Tool", "Lib"],
+      "description": {
+        "en": "A reusable TypeScript/Deno module for creating interactive CLI applications with customizable key bindings and progress bars.",
+        "fr": "Un module TypeScript/Deno réutilisable pour créer des applications CLI interactives avec des raccourcis clavier personnalisables et des barres de progression."
+      },
+      "links": {
+        "github": "https://github.com/studiowebux/debugcli",
+        "website": "https://debugcli.com",
+        "jsr": "https://jsr.io/@studiowebux/debugcli"
+      }
+    },
+    {
+      "name": "Petite DB",
+      "tags": ["TypeScript", "Deno", "Database", "Lib"],
+      "description": {
+        "en": "The minimalistic NoSQL in-memory/on-disk database.",
+        "fr": "La base de données NoSQL minimaliste en mémoire/sur disque."
+      },
+      "links": {
+        "github": "https://github.com/studiowebux/petitedb",
+        "jsr": "https://jsr.io/@studiowebux/petitedb"
+      }
+    },
+    {
+      "name": "Xorshift32",
+      "tags": ["TypeScript", "Deno", "Lib"],
+      "description": {
+        "en": "TypeScript implementation of xorshift32.",
+        "fr": "Implémentation TypeScript de xorshift32."
+      },
+      "links": {
+        "github": "https://github.com/studiowebux/xorshift32",
+        "jsr": "https://jsr.io/@studiowebux/xorshift32"
+      }
+    },
+    {
+      "name": "Minilog",
+      "tags": ["TypeScript", "Deno", "Lib"],
+      "description": {
+        "en": "The minimalistic logging companion for Deno projects.",
+        "fr": "Le compagnon de journalisation minimaliste pour les projets Deno."
+      },
+      "links": {
+        "github": "https://github.com/studiowebux/deno-minilog",
+        "jsr": "https://jsr.io/@studiowebux/deno-minilog"
+      }
+    },
+    {
+      "name": "Rest-O-Frigo",
+      "tags": ["TypeScript", "Deno", "Application", "iOS", "LLM", "Container"],
+      "description": {
+        "en": "Backend for Rest-O-Frigo mobile application - An LLM-based recipe generator.",
+        "fr": "Backend pour l'application mobile Rest-O-Frigo - Un générateur de recettes basé sur LLM."
+      },
+      "links": {
+        "github": "https://github.com/studiowebux/restofrigo-backend",
+        "website": "https://restofrigo.com"
+      }
+    },
+    {
+      "name": "Booklet",
+      "tags": ["TypeScript", "Deno", "Tool", "CLI"],
+      "description": {
+        "en": "Command to split and reorder PDF pages into signatures to print the outputted PDF in a booklet style.",
+        "fr": "Commande pour diviser et réorganiser les pages PDF en signatures pour imprimer le PDF résultant en format livret."
+      },
+      "links": {
+        "github": "https://github.com/studiowebux/booklet"
+      }
+    },
+    {
+      "name": "Star Notifier",
+      "tags": ["TypeScript", "Deno", "Application", "Container"],
+      "description": {
+        "en": "Star Citizen crawler to send notifications when CCU WB are detected.",
+        "fr": "Crawler Star Citizen pour envoyer des notifications lorsque des CCU WB sont détectés."
+      },
+      "links": {
+        "website": "https://starnotifier.com"
+      }
+    },
+    {
+      "name": "Island Generator",
+      "tags": ["TypeScript", "Deno", "Application", "Container"],
+      "description": {
+        "en": "TypeScript map generator in 2D and 3D using Perlin noise.",
+        "fr": "Générateur de carte TypeScript en 2D et 3D utilisant le bruit de Perlin."
+      },
+      "links": {
+        "website": "https://island.webuxlab.com"
+      }
+    },
+    {
+      "name": "MDPlanner",
+      "tags": ["TypeScript", "Deno", "Application", "Markdown"],
+      "description": {
+        "en": "A modern task management system that uses markdown files as the database, built with Deno and TypeScript.",
+        "fr": "Un système moderne de gestion de tâches qui utilise des fichiers markdown comme base de données, construit avec Deno et TypeScript."
+      },
+      "links": {
+        "github": "https://github.com/studiowebux/mdplanner",
+        "website": "https://mdplanner.dev"
+      }
+    },
+    {
+      "name": "Speech to Command",
+      "tags": ["Python", "Tool", "LLM", "STT"],
+      "description": {
+        "en": "Speech to Text - Using Whisper and pyautogui to control the machine.",
+        "fr": "Parole en texte - Utilise Whisper et pyautogui pour contrôler la machine."
+      },
+      "links": {
+        "github": "https://github.com/studiowebux/speech-to-command",
+        "website": "https://speechtocommand.com"
+      }
+    },
+    {
+      "name": "Ollama Mattermost",
+      "tags": ["TypeScript", "Deno", "Application", "LLM", "Container"],
+      "description": {
+        "en": "Chatbot using LangChain with Ollama chat and Mattermost.",
+        "fr": "Chatbot utilisant LangChain avec Ollama chat et Mattermost."
+      },
+      "links": {
+        "github": "https://github.com/studiowebux/ollama-mattermost"
+      }
+    },
+    {
+      "name": "Apotheos Game",
+      "tags": ["TypeScript", "Game", "Deno", "Container"],
+      "description": {
+        "en": "Take care of your robot.",
+        "fr": "Prenez soin de votre robot."
+      },
+      "links": {
+        "website": "https://apotheosgame.com"
+      }
+    },
+    {
+      "name": "Ma Future Maison",
+      "tags": ["Application", "VueJS", "Javascript", "Container"],
+      "description": {
+        "en": "Application to offer services such as budget, financial ideas, calculators, etc.",
+        "fr": "Application pour offrir des services tels que budget, idées financières, calculatrices, etc."
+      },
+      "links": {
+        "website": "https://mafuturemaison.com"
+      }
+    },
+    {
+      "name": "Pixel It",
+      "tags": ["Application", "TypeScript", "Deno", "Container"],
+      "description": {
+        "en": "Web-based tool to pixelate images.",
+        "fr": "Outil web pour pixeliser des images."
+      },
+      "links": {
+        "website": "https://pixel-it.webuxlab.com",
+        "github": "https://github.com/studiowebux/pixel-it"
+      }
+    }
+  ]
+}
