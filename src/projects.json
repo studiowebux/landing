@@ -209,6 +209,18 @@
         "website": "https://pixel-it.webuxlab.com",
         "github": "https://github.com/studiowebux/pixel-it"
       }
+    },
+    {
+      "name": "Botnet As A Service (bnass-ce)",
+      "tags": ["Application", "TypeScript", "Deno", "Container", "Tool", "CLI"],
+      "description": {
+        "en": "A powerful, flexible graph execution engine for Deno that supports HTTP requests, conditions, string interpolation, data manipulation, and custom functions. Perfect for building complex automation workflows, API orchestration, and data processing pipelines.",
+        "fr": "Un puissant moteur d'exécution de graphes flexible pour Deno qui prend en charge les requêtes HTTP, les conditions, l'interpolation de chaînes, la manipulation des données et les fonctions personnalisées. Parfait pour créer des flux de travail automatisés complexes, orchestrer des API et construire des pipelines de traitement de données."
+      },
+      "links": {
+        "website": "https://botnetasaservice.com",
+        "github": "https://github.com/studiowebux/bnaas-ce"
+      }
     }
   ]
 }

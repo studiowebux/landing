@@ -7,28 +7,53 @@
             name="description"
             content="Studio Webux - DevOps solutions, infrastructure consulting, and automation services. AWS, OVH, Hetzner cloud expertise. Based in Sainte-Thérèse, Québec."
         />
-        <meta name="keywords" content="DevOps, AWS, OVH, Hetzner, Ansible, CI/CD, Infrastructure, Cloud, Monitoring, Automation, Québec" />
+        <meta
+            name="keywords"
+            content="DevOps, AWS, OVH, Hetzner, Ansible, CI/CD, Infrastructure, Cloud, Monitoring, Automation, Québec"
+        />
         <meta name="author" content="Studio Webux" />
         <title>Studio Webux - DevOps & Infrastructure Solutions | Québec</title>
 
         <!-- Open Graph / Social Media -->
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Studio Webux - DevOps & Infrastructure Solutions" />
-        <meta property="og:description" content="AWS, OVH, Hetzner cloud solutions. Infrastructure consulting, automation, and DevOps services in Québec." />
-        <meta property="og:image" content="https://studiowebux.com/assets/img/logo.svg" />
+        <meta
+            property="og:title"
+            content="Studio Webux - DevOps & Infrastructure Solutions"
+        />
+        <meta
+            property="og:description"
+            content="AWS, OVH, Hetzner cloud solutions. Infrastructure consulting, automation, and DevOps services in Québec."
+        />
+        <meta
+            property="og:image"
+            content="https://studiowebux.com/assets/img/logo.svg"
+        />
         <meta property="og:url" content="https://studiowebux.com" />
         <meta property="og:locale" content="en_CA" />
         <meta property="og:locale:alternate" content="fr_CA" />
 
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Studio Webux - DevOps & Infrastructure Solutions" />
-        <meta name="twitter:description" content="AWS, OVH, Hetzner cloud solutions. Infrastructure consulting and automation services." />
-        <meta name="twitter:image" content="https://studiowebux.com/assets/img/logo.svg" />
+        <meta
+            name="twitter:title"
+            content="Studio Webux - DevOps & Infrastructure Solutions"
+        />
+        <meta
+            name="twitter:description"
+            content="AWS, OVH, Hetzner cloud solutions. Infrastructure consulting and automation services."
+        />
+        <meta
+            name="twitter:image"
+            content="https://studiowebux.com/assets/img/logo.svg"
+        />
 
         <!-- Favicon -->
         <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg" />
-        <link rel="alternate icon" type="image/png" href="assets/img/logo-studio-webux.png" />
+        <link
+            rel="alternate icon"
+            type="image/png"
+            href="assets/img/logo-studio-webux.png"
+        />
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -43,36 +68,72 @@
 
         <!-- Structured Data for SEO -->
         <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            "name": "Studio Webux",
-            "description": "DevOps solutions, infrastructure consulting, and automation services",
-            "url": "https://studiowebux.com",
-            "logo": "https://studiowebux.com/assets/img/logo.svg",
-            "image": "https://studiowebux.com/assets/img/logo.svg",
-            "telephone": "",
-            "email": "contact@studiowebux.com",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Sainte-Thérèse",
-                "addressRegion": "QC",
-                "addressCountry": "CA"
-            },
-            "areaServed": {
-                "@type": "Country",
-                "name": "Canada"
-            },
-            "sameAs": [
-                "https://github.com/studiowebux",
-                "https://www.linkedin.com/in/tommy-gingras-125262123",
-                "https://webuxlab.com",
-                "https://discord.gg/BG5Erm9fNv"
-            ],
-            "knowsAbout": ["DevOps", "AWS", "OVH", "Hetzner", "Ansible", "CI/CD", "Infrastructure", "Cloud Computing", "Monitoring", "Automation"],
-            "serviceType": ["Cloud Infrastructure", "DevOps Automation", "Infrastructure Consulting", "Monitoring and Observability"]
-        }
+            {
+                "@context": "https://schema.org",
+                "@type": "ProfessionalService",
+                "name": "Studio Webux",
+                "description": "DevOps solutions, infrastructure consulting, and automation services",
+                "url": "https://studiowebux.com",
+                "logo": "https://studiowebux.com/assets/img/logo.svg",
+                "image": "https://studiowebux.com/assets/img/logo.svg",
+                "telephone": "",
+                "email": "contact@studiowebux.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Sainte-Thérèse",
+                    "addressRegion": "QC",
+                    "addressCountry": "CA"
+                },
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "Canada"
+                },
+                "sameAs": [
+                    "https://github.com/studiowebux",
+                    "https://www.linkedin.com/in/tommy-gingras-125262123",
+                    "https://webuxlab.com",
+                    "https://discord.gg/BG5Erm9fNv"
+                ],
+                "knowsAbout": [
+                    "DevOps",
+                    "AWS",
+                    "OVH",
+                    "Hetzner",
+                    "Ansible",
+                    "CI/CD",
+                    "Infrastructure",
+                    "Cloud Computing",
+                    "Monitoring",
+                    "Automation"
+                ],
+                "serviceType": [
+                    "Cloud Infrastructure",
+                    "DevOps Automation",
+                    "Infrastructure Consulting",
+                    "Monitoring and Observability"
+                ]
+            }
         </script>
+
+        <!-- Matomo -->
+        <script>
+            var _paq = (window._paq = window._paq || []);
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(["trackPageView"]);
+            _paq.push(["enableLinkTracking"]);
+            (function () {
+                var u = "//localhost:8080/";
+                _paq.push(["setTrackerUrl", u + "matomo.php"]);
+                _paq.push(["setSiteId", "1"]);
+                var d = document,
+                    g = d.createElement("script"),
+                    s = d.getElementsByTagName("script")[0];
+                g.async = true;
+                g.src = u + "matomo.js";
+                s.parentNode.insertBefore(g, s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
     </head>
     <body>
         <!-- Skip Navigation for Accessibility -->
@@ -141,8 +202,9 @@
                         >
                             <strong>AWS, OVH, Hetzner</strong> cloud solutions.
                             <strong>Linux/macOS</strong> environments,
-                            <strong>baremetal</strong>, <strong>VMs</strong>, and
-                            <strong>containers</strong>. <strong>Monitoring and observability</strong> setup.
+                            <strong>baremetal</strong>, <strong>VMs</strong>,
+                            and <strong>containers</strong>.
+                            <strong>Monitoring and observability</strong> setup.
                         </p>
                     </div>
                     <div class="service-card">
@@ -156,9 +218,11 @@
                             data-en="<strong>Ansible</strong> playbooks, <strong>Bash</strong> scripting, and <strong>CI/CD pipelines</strong>. <strong>Configuration management</strong> and <strong>workflow automation</strong> that scales."
                             data-fr="Playbooks <strong>Ansible</strong>, scripts <strong>Bash</strong> et <strong>pipelines CI/CD</strong>. <strong>Gestion de configuration</strong> et <strong>automatisation de workflows</strong> évolutifs."
                         >
-                            <strong>Ansible</strong> playbooks, <strong>Bash</strong> scripting,
-                            and <strong>CI/CD pipelines</strong>. <strong>Configuration
-                            management</strong> and <strong>workflow automation</strong> that scales.
+                            <strong>Ansible</strong> playbooks,
+                            <strong>Bash</strong> scripting, and
+                            <strong>CI/CD pipelines</strong>.
+                            <strong>Configuration management</strong> and
+                            <strong>workflow automation</strong> that scales.
                         </p>
                     </div>
                     <div class="service-card">
@@ -173,13 +237,21 @@
                             data-fr="Conception et révision d'<strong>architecture</strong>, <strong>stratégies de migration</strong> (<strong>legacy</strong> vers moderne, <strong>on-prem</strong> vers cloud) et <strong>optimisation de performance</strong>."
                         >
                             <strong>Architecture</strong> design and review,
-                            <strong>migration strategies</strong> (<strong>legacy</strong> to
-                            modern, <strong>on-prem</strong> to cloud), and
+                            <strong>migration strategies</strong> (<strong
+                                >legacy</strong
+                            >
+                            to modern, <strong>on-prem</strong> to cloud), and
                             <strong>performance optimization</strong>.
                         </p>
                     </div>
                 </div>
-                <p class="services-note" data-en="Need something specific? Let's talk." data-fr="Besoin de quelque chose de spécifique? Parlons-en.">Need something specific? Let's talk.</p>
+                <p
+                    class="services-note"
+                    data-en="Need something specific? Let's talk."
+                    data-fr="Besoin de quelque chose de spécifique? Parlons-en."
+                >
+                    Need something specific? Let's talk.
+                </p>
             </div>
         </section>
 
@@ -280,13 +352,29 @@
         <section id="portfolio-section">
             <div class="container">
                 <h2 data-en="Portfolio" data-fr="Portfolio">Portfolio</h2>
-                <p class="portfolio-intro" data-en="Check out our collection of projects, experiments, and random stuff we're building." data-fr="Découvrez notre collection de projets, expérimentations et trucs aléatoires que nous construisons.">
-                    Check out our collection of projects, experiments, and random stuff we're building.
+                <p
+                    class="portfolio-intro"
+                    data-en="Check out our collection of projects, experiments, and random stuff we're building."
+                    data-fr="Découvrez notre collection de projets, expérimentations et trucs aléatoires que nous construisons."
+                >
+                    Check out our collection of projects, experiments, and
+                    random stuff we're building.
                 </p>
                 <a href="portfolio.html" class="cta-button portfolio-cta">
-                    <span data-en="View Portfolio" data-fr="Voir le portfolio">View Portfolio</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    <span data-en="View Portfolio" data-fr="Voir le portfolio"
+                        >View Portfolio</span
+                    >
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M5 12h14M12 5l7 7-7 7" />
                     </svg>
                 </a>
             </div>
