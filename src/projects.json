@@ -211,7 +211,7 @@
       }
     },
     {
-      "name": "Botnet As A Service (bnass-ce)",
+      "name": "Botnet As A Service (bnaas-ce)",
       "tags": ["Application", "TypeScript", "Deno", "Container", "Tool", "CLI"],
       "description": {
         "en": "A powerful, flexible graph execution engine for Deno that supports HTTP requests, conditions, string interpolation, data manipulation, and custom functions. Perfect for building complex automation workflows, API orchestration, and data processing pipelines.",
