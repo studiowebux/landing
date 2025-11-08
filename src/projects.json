@@ -98,7 +98,15 @@
     },
     {
       "name": "Rest-O-Frigo",
-      "tags": ["TypeScript", "Deno", "Application", "iOS", "LLM", "Container"],
+      "tags": [
+        "TypeScript",
+        "Deno",
+        "Application",
+        "iOS",
+        "LLM",
+        "Container",
+        "Swift"
+      ],
       "description": {
         "en": "Backend for Rest-O-Frigo mobile application - An LLM-based recipe generator.",
         "fr": "Backend pour l'application mobile Rest-O-Frigo - Un générateur de recettes basé sur LLM."
@@ -122,7 +130,7 @@
     },
     {
       "name": "Star Notifier",
-      "tags": ["TypeScript", "Deno", "Application", "Container"],
+      "tags": ["TypeScript", "Deno", "Application", "Container", "MongoDB"],
       "description": {
         "en": "Star Citizen crawler to send notifications when CCU WB are detected.",
         "fr": "Crawler Star Citizen pour envoyer des notifications lorsque des CCU WB sont détectés."
@@ -179,7 +187,14 @@
     },
     {
       "name": "Apotheos Game",
-      "tags": ["TypeScript", "Game", "Deno", "Container"],
+      "tags": [
+        "TypeScript",
+        "Game",
+        "Deno",
+        "Container",
+        "Petite DB",
+        "WebSocket"
+      ],
       "description": {
         "en": "Take care of your robot.",
         "fr": "Prenez soin de votre robot."
@@ -221,6 +236,19 @@
       "links": {
         "website": "https://botnetasaservice.com",
         "github": "https://github.com/studiowebux/bnaas-ce"
+      }
+    },
+    {
+      "name": "Noditor - Graph",
+      "tags": ["TypeScript", "Deno", "Lib", "Tool"],
+      "description": {
+        "en": "A modular graph data processing toolkit with chainable pipelines, reusable processors, and utilities for filtering, transforming, and applying custom formulas to nodes and edges, built with graphology.",
+        "fr": "Une boîte à outils modulaire de traitement de données de graphe avec des pipelines chaînables, des processeurs réutilisables et des utilitaires pour filtrer, transformer et appliquer des formules personnalisées aux nœuds et arêtes, construite avec graphology."
+      },
+      "links": {
+        "website": "https://noditor.com",
+        "github": "https://github.com/studiowebux/noditor-graph",
+        "jsr": "https://jsr.io/@studiowebux/noditor-graph"
       }
     }
   ]
