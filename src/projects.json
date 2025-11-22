@@ -26,10 +26,10 @@
     },
     {
       "name": "Time Ago",
-      "tags": ["TypeScript", "Deno", "CLI", "Tool"],
+      "tags": ["TypeScript", "Go", "CLI", "Tool"],
       "description": {
-        "en": "Deno CLI tool to help with epoch timestamps.",
-        "fr": "Outil CLI Deno pour aider avec les horodatages epoch."
+        "en": "CLI tool to help with epoch timestamps.",
+        "fr": "Outil CLI pour aider avec les horodatages epoch."
       },
       "links": {
         "github": "https://github.com/studiowebux/timeago"
@@ -37,7 +37,7 @@
     },
     {
       "name": "REST CLI",
-      "tags": ["TypeScript", "Deno", "CLI", "Tool"],
+      "tags": ["TypeScript", "Go", "CLI", "Tool"],
       "description": {
         "en": "REST CLI + TUI - A way to test your API.",
         "fr": "REST CLI + TUI - Une façon de tester votre API."
@@ -228,7 +228,15 @@
     },
     {
       "name": "Botnet As A Service (bnaas-ce)",
-      "tags": ["Application", "TypeScript", "Deno", "Container", "Tool", "CLI"],
+      "tags": [
+        "Application",
+        "TypeScript",
+        "Deno",
+        "Container",
+        "Tool",
+        "CLI",
+        "WebUI"
+      ],
       "description": {
         "en": "A powerful, flexible graph execution engine for Deno that supports HTTP requests, conditions, string interpolation, data manipulation, and custom functions. Perfect for building complex automation workflows, API orchestration, and data processing pipelines.",
         "fr": "Un puissant moteur d'exécution de graphes flexible pour Deno qui prend en charge les requêtes HTTP, les conditions, l'interpolation de chaînes, la manipulation des données et les fonctions personnalisées. Parfait pour créer des flux de travail automatisés complexes, orchestrer des API et construire des pipelines de traitement de données."
@@ -249,6 +257,25 @@
         "website": "https://noditor.com",
         "github": "https://github.com/studiowebux/noditor-graph",
         "jsr": "https://jsr.io/@studiowebux/noditor-graph"
+      }
+    },
+    {
+      "name": "Orchestrator",
+      "tags": [
+        "TypeScript",
+        "Deno",
+        "CLI",
+        "Tool",
+        "PoC",
+        "Application",
+        "Container"
+      ],
+      "description": {
+        "en": "Manage podman tasks using a webpage or an api",
+        "fr": "Gérez les tâches Podman à l'aide d'une page web ou d'une API."
+      },
+      "links": {
+        "github": "https://github.com/studiowebux/orchestrator"
       }
     }
   ]
