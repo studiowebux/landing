@@ -228,15 +228,7 @@
     },
     {
       "name": "Botnet As A Service (bnaas-ce)",
-      "tags": [
-        "Application",
-        "TypeScript",
-        "Deno",
-        "Container",
-        "Tool",
-        "CLI",
-        "WebUI"
-      ],
+      "tags": ["Application", "TypeScript", "Deno", "Container", "Tool", "CLI"],
       "description": {
         "en": "A powerful, flexible graph execution engine for Deno that supports HTTP requests, conditions, string interpolation, data manipulation, and custom functions. Perfect for building complex automation workflows, API orchestration, and data processing pipelines.",
         "fr": "Un puissant moteur d'exécution de graphes flexible pour Deno qui prend en charge les requêtes HTTP, les conditions, l'interpolation de chaînes, la manipulation des données et les fonctions personnalisées. Parfait pour créer des flux de travail automatisés complexes, orchestrer des API et construire des pipelines de traitement de données."
@@ -271,11 +263,34 @@
         "Container"
       ],
       "description": {
-        "en": "Manage podman tasks using a webpage or an api",
+        "en": "Manage podman tasks using a webpage or an api.",
         "fr": "Gérez les tâches Podman à l'aide d'une page web ou d'une API."
       },
       "links": {
         "github": "https://github.com/studiowebux/orchestrator"
+      }
+    },
+    {
+      "name": "Minimal Doc",
+      "tags": ["Go", "CLI", "Tool", "Application"],
+      "description": {
+        "en": "A modern, minimal static site generator for documentation written in Go.",
+        "fr": "Un générateur de sites statiques moderne et minimaliste pour la documentation, écrit en Go."
+      },
+      "links": {
+        "github": "https://github.com/studiowebux/minimaldoc",
+        "website": "https://minimaldoc.com"
+      }
+    },
+    {
+      "name": "Webux Lab",
+      "tags": ["Application", "Deno", "Application", "Container"],
+      "description": {
+        "en": "Dynamic blog powered by Deno/TypeScript with on-the-fly Markdown-to-HTML conversion.",
+        "fr": "Blog dynamique propulsé par Deno/TypeScript avec conversion Markdown vers HTML sur demande."
+      },
+      "links": {
+        "website": "https://webuxlab.com"
       }
     }
   ]
