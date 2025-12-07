@@ -1,6 +1,20 @@
 {
   "projects": [
     {
+      "name": "Kube Buddy",
+      "tags": ["Go", "CLI", "Application"],
+      "screenshots": [],
+      "videos": [],
+      "links": {
+        "github": "https://github.com/studiowebux/kubebuddy",
+        "doc": "https://studiowebux.github.io/kubebuddy/"
+      },
+      "description": {
+        "en": "Capacity planning system for compute resources and services with intelligent placement rules.",
+        "fr": "Système de planification de capacité pour les ressources de calcul et les services avec des règles de placement intelligentes."
+      }
+    },
+    {
       "name": "Obsidian Spotify Link",
       "tags": ["TypeScript", "Obsidian"],
       "screenshots": [],
