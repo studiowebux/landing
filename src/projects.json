@@ -1,6 +1,19 @@
 {
   "projects": [
     {
+      "name": "Run Axis - Arduino",
+      "tags": ["Arduino", "Game"],
+      "screenshots": [],
+      "videos": [],
+      "links": {
+        "github": "https://github.com/studiowebux/runaxis-arduino"
+      },
+      "description": {
+        "en": "Converts treadmill speed into gaming keyboard input with configurable movement key and automatic shift activation.",
+        "fr": "Convertit la vitesse du tapis roulant en entrée clavier de jeu avec touche de déplacement configurable et activation automatique de la touche shift."
+      }
+    },
+    {
       "name": "Kube Buddy",
       "tags": ["Go", "CLI", "Application"],
       "screenshots": [],
@@ -35,7 +48,8 @@
         "fr": "Plugin pour éditer un fichier CSV dans Obsidian. L'objectif est d'afficher des graphiques en utilisant le fichier CSV comme source de données, le tout fait dans Obsidian avec la possibilité d'utiliser un logiciel externe pour préparer le CSV également!"
       },
       "links": {
-        "github": "https://github.com/studiowebux/obsidian-findoc"
+        "github": "https://github.com/studiowebux/obsidian-findoc",
+        "doc": "https://studiowebux.github.io/obsidian-findoc/"
       }
     },
     {
