@@ -1,6 +1,19 @@
 {
   "projects": [
     {
+      "name": "Play or Host",
+      "tags": ["iOS", "Application", "Swift"],
+      "screenshots": [],
+      "videos": [],
+      "links": {
+        "website": "https://playorhost.com"
+      },
+      "description": {
+        "en": "Your all-in-one TTRPG toolkit. Create characters, roll dice, draw cards, and consult oracles. All your data syncs via iCloud across your Apple devices.",
+        "fr": "Votre boîte à outils tout-en-un pour jeux de rôle sur table. Créez des personnages, lancez les dés, tirez des cartes et consultez des oracles. Toutes vos données se synchronisent via iCloud sur tous vos appareils Apple."
+      }
+    },
+    {
       "name": "Run Axis - Arduino",
       "tags": ["Arduino", "Game"],
       "screenshots": [],
