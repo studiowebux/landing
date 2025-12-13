@@ -1,5 +1,18 @@
 {
   "projects": [
+    { 
+      "name": "Ollama TUI",
+      "tags": ["Go", "Application", "CLI", "LLM"],
+      "screenshots": [],
+      "videos": [],
+      "links": {
+        "website": "https://ollamatui.com"
+      },
+      "description": {
+        "en": "Extensible terminal-based chatbot for Ollama with real-time streaming, chat persistence, and model selection.",
+        "fr": "Chatbot terminal extensible pour Ollama avec streaming en temps réel, persistance des conversations et sélection de modèles."
+      }
+    },
     {
       "name": "Play or Host",
       "tags": ["iOS", "Application", "Swift"],
