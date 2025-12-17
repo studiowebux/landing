@@ -1,6 +1,20 @@
 {
   "projects": [
-    { 
+    {
+      "name": "SSH TUI",
+      "tags": ["Go", "Application", "CLI"],
+      "screenshots": [],
+      "videos": [],
+      "links": {
+        "website": "https://sshtui.com",
+        "github": "https://github.com/studiowebux/sshtui"
+      },
+      "description": {
+        "en": "SSH session manager with persistent sessions and scrollback.",
+        "fr": "Gestionnaire de sessions SSH avec sessions persistantes et historique de défilement."
+      }
+    },
+    {
       "name": "Ollama TUI",
       "tags": ["Go", "Application", "CLI", "LLM"],
       "screenshots": [],
