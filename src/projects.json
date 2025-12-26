@@ -1,6 +1,20 @@
 {
   "projects": [
     {
+      "name": "Proxy TUI",
+      "tags": ["Go", "Application", "CLI"],
+      "screenshots": [],
+      "videos": [],
+      "links": {
+        "website": "https://proxytui.com",
+        "github": "https://github.com/studiowebux/proxytui"
+      },
+      "description": {
+        "en": "Secure single-binary reverse proxy with automatic HTTPS for exposing local services safely.",
+        "fr": "Reverse proxy sécurisé en un seul exécutable, avec HTTPS automatique, pour exposer vos services locaux en toute sécurité."
+      }
+    },
+    {
       "name": "SSH TUI",
       "tags": ["Go", "Application", "CLI"],
       "screenshots": [],
