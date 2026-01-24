@@ -417,6 +417,17 @@ footer p {
     margin: 5px 0;
 }
 
+footer a {
+    color: var(--primary-yellow);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .services-grid {
