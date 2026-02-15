@@ -4,25 +4,35 @@
 
   let projectsData = [];
   let activeFilters = new Set();
+  let activeStatusFilters = new Set();
   let portfolioLang = localStorage.getItem("language") || "en";
 
+  // Status configuration: internal key -> display labels and CSS modifier
+  const STATUS_CONFIG = {
+    production: { en: "In Production", fr: "En production", order: 0 },
+    design: { en: "Design", fr: "Conception", order: 1 },
+    poc: { en: "POC / MVP", fr: "POC / MVP", order: 2 },
+    development: { en: "In Development", fr: "En développement", order: 3 },
+    maintenance: { en: "Maintenance", fr: "Maintenance", order: 4 },
+    testing: { en: "Testing", fr: "En test", order: 5 },
+    cancelled: { en: "Cancelled", fr: "Annulé", order: 6 },
+    inactive: { en: "Not Active", fr: "Inactif", order: 7 },
+  };
+
   document.addEventListener("DOMContentLoaded", async () => {
-    // Get current language from localStorage (synced with script.js)
     portfolioLang = localStorage.getItem("language") || "en";
 
-    // Listen for language changes
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.addEventListener("click", () => {
-        // Small delay to ensure localStorage is updated by script.js
         setTimeout(() => {
           portfolioLang = localStorage.getItem("language") || "en";
           renderProjects();
           updateFilterLabels();
+          updateStatusFilterLabels();
         }, 50);
       });
     });
 
-    // Load and render projects
     await loadProjects();
     setupImageModal();
   });
@@ -34,6 +44,7 @@
       const data = await response.json();
       projectsData = data.projects || [];
 
+      renderStatusFilters();
       renderFilterTags();
       renderProjects();
     } catch (error) {
@@ -42,7 +53,95 @@
     }
   }
 
-  // Extract all unique tags from projects
+  // --- Status filter logic ---
+
+  function getAllStatuses() {
+    const statusSet = new Set();
+    projectsData.forEach((project) => {
+      if (project.status) {
+        statusSet.add(project.status);
+      }
+    });
+    return Array.from(statusSet).sort(
+      (a, b) => (STATUS_CONFIG[a]?.order ?? 99) - (STATUS_CONFIG[b]?.order ?? 99),
+    );
+  }
+
+  function renderStatusFilters() {
+    const container = document.getElementById("status-filters");
+    if (!container) return;
+
+    const allStatuses = getAllStatuses();
+    if (allStatuses.length === 0) {
+      container.parentElement.parentElement.style.display = "none";
+      return;
+    }
+
+    // "All" button
+    const allButton = createStatusFilterButton("all", "All", "Tous", true);
+    allButton.addEventListener("click", () => {
+      activeStatusFilters.clear();
+      updateStatusFilterButtons();
+      renderProjects();
+    });
+    container.appendChild(allButton);
+
+    allStatuses.forEach((status) => {
+      const config = STATUS_CONFIG[status] || { en: status, fr: status };
+      const button = createStatusFilterButton(status, config.en, config.fr, false);
+      button.addEventListener("click", () => {
+        if (activeStatusFilters.has(status)) {
+          activeStatusFilters.delete(status);
+        } else {
+          activeStatusFilters.add(status);
+        }
+        updateStatusFilterButtons();
+        renderProjects();
+      });
+      container.appendChild(button);
+    });
+  }
+
+  function createStatusFilterButton(key, labelEn, labelFr, isAll) {
+    const button = document.createElement("button");
+    button.className = "filter-tag status-filter-tag";
+    if (!isAll) {
+      button.classList.add("status-" + key);
+    }
+    button.dataset.status = key;
+    button.dataset.en = labelEn;
+    button.dataset.fr = labelFr;
+    button.textContent = portfolioLang === "fr" ? labelFr : labelEn;
+
+    if (isAll && activeStatusFilters.size === 0) {
+      button.classList.add("active");
+    }
+
+    return button;
+  }
+
+  function updateStatusFilterButtons() {
+    const buttons = document.querySelectorAll("#status-filters .filter-tag");
+    buttons.forEach((button) => {
+      const key = button.dataset.status;
+      if (key === "all") {
+        button.classList.toggle("active", activeStatusFilters.size === 0);
+      } else {
+        button.classList.toggle("active", activeStatusFilters.has(key));
+      }
+    });
+  }
+
+  function updateStatusFilterLabels() {
+    const buttons = document.querySelectorAll("#status-filters .filter-tag");
+    buttons.forEach((button) => {
+      button.textContent =
+        portfolioLang === "fr" ? button.dataset.fr : button.dataset.en;
+    });
+  }
+
+  // --- Tag filter logic (unchanged) ---
+
   function getAllTags() {
     const tagsSet = new Set();
     projectsData.forEach((project) => {
@@ -53,7 +152,6 @@
     return Array.from(tagsSet).sort();
   }
 
-  // Render filter tags
   function renderFilterTags() {
     const filterContainer = document.getElementById("tag-filters");
     if (!filterContainer) return;
@@ -65,7 +163,6 @@
       return;
     }
 
-    // Create "All" button
     const allButton = createFilterButton("All", "Tous", true);
     allButton.addEventListener("click", () => {
       activeFilters.clear();
@@ -74,7 +171,6 @@
     });
     filterContainer.appendChild(allButton);
 
-    // Create tag filter buttons
     allTags.forEach((tag) => {
       const button = createFilterButton(tag, tag, false);
       button.addEventListener("click", () => {
@@ -86,7 +182,6 @@
     });
   }
 
-  // Create a filter button element
   function createFilterButton(labelEn, labelFr, isAll = false) {
     const button = document.createElement("button");
     button.className = "filter-tag";
@@ -102,17 +197,14 @@
     return button;
   }
 
-  // Update filter button labels when language changes
   function updateFilterLabels() {
-    const filterButtons = document.querySelectorAll(".filter-tag");
+    const filterButtons = document.querySelectorAll("#tag-filters .filter-tag");
     filterButtons.forEach((button) => {
-      const labelEn = button.dataset.en;
-      const labelFr = button.dataset.fr;
-      button.textContent = portfolioLang === "fr" ? labelFr : labelEn;
+      button.textContent =
+        portfolioLang === "fr" ? button.dataset.fr : button.dataset.en;
     });
   }
 
-  // Toggle filter
   function toggleFilter(tag) {
     if (activeFilters.has(tag)) {
       activeFilters.delete(tag);
@@ -121,9 +213,8 @@
     }
   }
 
-  // Update filter button states
   function updateFilterButtons() {
-    const filterButtons = document.querySelectorAll(".filter-tag");
+    const filterButtons = document.querySelectorAll("#tag-filters .filter-tag");
 
     filterButtons.forEach((button) => {
       const tag = button.dataset.tag;
@@ -136,32 +227,41 @@
     });
   }
 
-  // Render projects based on active filters
+  // --- Project rendering ---
+
   function renderProjects() {
     const container = document.querySelector(".projects-grid");
     if (!container) return;
 
     container.innerHTML = "";
 
-    const filteredProjects =
-      activeFilters.size === 0
-        ? projectsData
-        : projectsData.filter((project) => {
-            if (!project.tags) return false;
-            return project.tags.some((tag) => activeFilters.has(tag));
-          });
+    let filtered = projectsData;
 
-    if (filteredProjects.length === 0) {
+    // Filter by status
+    if (activeStatusFilters.size > 0) {
+      filtered = filtered.filter(
+        (project) => project.status && activeStatusFilters.has(project.status),
+      );
+    }
+
+    // Filter by tags
+    if (activeFilters.size > 0) {
+      filtered = filtered.filter((project) => {
+        if (!project.tags) return false;
+        return project.tags.some((tag) => activeFilters.has(tag));
+      });
+    }
+
+    if (filtered.length === 0) {
       showNoResults(container);
       return;
     }
 
-    filteredProjects.forEach((project) => {
+    filtered.forEach((project) => {
       const card = createProjectCard(project);
       container.appendChild(card);
     });
 
-    // Setup screenshot click handlers after rendering
     setupScreenshotHandlers();
   }
 
@@ -169,12 +269,40 @@
   function createProjectCard(project) {
     const article = document.createElement("article");
     article.className = "project-card";
+    if (project.status) {
+      article.classList.add("project-status-" + project.status);
+    }
 
-    // Project name
+    // Header row: name + status badge
+    const header = document.createElement("div");
+    header.className = "project-header";
+
     const name = document.createElement("h2");
     name.className = "project-name";
     name.textContent = project.name;
-    article.appendChild(name);
+    header.appendChild(name);
+
+    if (project.status) {
+      const badge = document.createElement("span");
+      badge.className = "project-status-badge status-" + project.status;
+      const config = STATUS_CONFIG[project.status];
+      badge.textContent = config
+        ? config[portfolioLang] || config.en
+        : project.status;
+      header.appendChild(badge);
+    }
+
+    article.appendChild(header);
+
+    // Status date
+    if (project.statusDate) {
+      const dateEl = document.createElement("time");
+      dateEl.className = "project-status-date";
+      dateEl.setAttribute("datetime", project.statusDate);
+      const dateLabel = portfolioLang === "fr" ? "Mis à jour" : "Updated";
+      dateEl.textContent = dateLabel + ": " + formatDate(project.statusDate);
+      article.appendChild(dateEl);
+    }
 
     // Tags
     if (project.tags && project.tags.length > 0) {
@@ -268,7 +396,6 @@
         );
       }
 
-      // Support for any other custom links
       Object.keys(project.links).forEach((key) => {
         if (!["github", "website", "npm", "jsr", "appstore"].includes(key)) {
           linksDiv.appendChild(
@@ -296,6 +423,15 @@
     }
 
     return article;
+  }
+
+  function formatDate(dateStr) {
+    const date = new Date(dateStr + "T00:00:00");
+    return date.toLocaleDateString(portfolioLang === "fr" ? "fr-CA" : "en-CA", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
   }
 
   // Create link button with icon
@@ -460,8 +596,8 @@
   function showNoResults(container) {
     container.innerHTML = `
         <div class="no-results">
-            <p data-en="No projects found with the selected tags." data-fr="Aucun projet trouvé avec les étiquettes sélectionnées.">
-                No projects found with the selected tags.
+            <p data-en="No projects found with the selected filters." data-fr="Aucun projet trouvé avec les filtres sélectionnés.">
+                No projects found with the selected filters.
             </p>
         </div>
     `;

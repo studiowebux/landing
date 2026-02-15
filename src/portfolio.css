@@ -86,6 +86,151 @@
     color: var(--black);
 }
 
+/* Status Filter Section */
+#status-filter-section {
+    padding: 40px 0 0;
+    background: var(--bg-primary);
+    text-align: center;
+}
+
+#status-filter-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: var(--text-primary);
+}
+
+.status-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Status filter button colors when active */
+.status-filter-tag.status-production.active {
+    background: #2d8a4e;
+    border-color: #2d8a4e;
+    color: #fff;
+}
+
+.status-filter-tag.status-design.active {
+    background: #7c3aed;
+    border-color: #7c3aed;
+    color: #fff;
+}
+
+.status-filter-tag.status-poc.active {
+    background: #d97706;
+    border-color: #d97706;
+    color: #fff;
+}
+
+.status-filter-tag.status-development.active {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: #fff;
+}
+
+.status-filter-tag.status-maintenance.active {
+    background: #6b7280;
+    border-color: #6b7280;
+    color: #fff;
+}
+
+.status-filter-tag.status-testing.active {
+    background: #0891b2;
+    border-color: #0891b2;
+    color: #fff;
+}
+
+.status-filter-tag.status-cancelled.active {
+    background: #dc2626;
+    border-color: #dc2626;
+    color: #fff;
+}
+
+.status-filter-tag.status-inactive.active {
+    background: #4b5563;
+    border-color: #4b5563;
+    color: #fff;
+}
+
+/* Project card header with status badge */
+.project-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.project-header .project-name {
+    margin-bottom: 0;
+}
+
+/* Status badge on project cards */
+.project-status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 0.35rem;
+}
+
+.project-status-badge.status-production {
+    background: #2d8a4e;
+    color: #fff;
+}
+
+.project-status-badge.status-design {
+    background: #7c3aed;
+    color: #fff;
+}
+
+.project-status-badge.status-poc {
+    background: #d97706;
+    color: #fff;
+}
+
+.project-status-badge.status-development {
+    background: #2563eb;
+    color: #fff;
+}
+
+.project-status-badge.status-maintenance {
+    background: #6b7280;
+    color: #fff;
+}
+
+.project-status-badge.status-testing {
+    background: #0891b2;
+    color: #fff;
+}
+
+.project-status-badge.status-cancelled {
+    background: #dc2626;
+    color: #fff;
+}
+
+.project-status-badge.status-inactive {
+    background: #4b5563;
+    color: #fff;
+}
+
+/* Status date */
+.project-status-date {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    font-style: italic;
+}
+
 #portfolio-content {
     padding: 40px 0 80px;
     background: var(--bg-primary);

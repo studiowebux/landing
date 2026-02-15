@@ -2,6 +2,8 @@
   "projects": [
     {
       "name": "Proxy TUI",
+      "status": "testing",
+      "statusDate": "2026-02-15",
       "tags": ["Go", "Application", "CLI"],
       "screenshots": [],
       "videos": [],
@@ -16,6 +18,8 @@
     },
     {
       "name": "SSH TUI",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["Go", "Application", "CLI"],
       "screenshots": [],
       "videos": [],
@@ -30,6 +34,8 @@
     },
     {
       "name": "Ollama TUI",
+      "status": "design",
+      "statusDate": "2026-02-15",
       "tags": ["Go", "Application", "CLI", "LLM"],
       "screenshots": [],
       "videos": [],
@@ -43,6 +49,8 @@
     },
     {
       "name": "Play or Host",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["iOS", "Application", "Swift"],
       "screenshots": [],
       "videos": [],
@@ -56,6 +64,8 @@
     },
     {
       "name": "Run Axis - Arduino",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["Arduino", "Game"],
       "screenshots": [],
       "videos": [],
@@ -69,6 +79,8 @@
     },
     {
       "name": "Kube Buddy",
+      "status": "design",
+      "statusDate": "2026-02-15",
       "tags": ["Go", "CLI", "Application"],
       "screenshots": [],
       "videos": [],
@@ -83,6 +95,8 @@
     },
     {
       "name": "Obsidian Spotify Link",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Obsidian"],
       "screenshots": [],
       "videos": [],
@@ -96,6 +110,8 @@
     },
     {
       "name": "Obsidian FinDoc",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Obsidian"],
       "description": {
         "en": "Plugin to edit a CSV file in Obsidian. The goal is to show charts using the CSV file as the data source, everything done in Obsidian with the possibility to use external software to prepare the CSV as well!",
@@ -108,6 +124,8 @@
     },
     {
       "name": "Time Ago",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Go", "CLI", "Tool"],
       "description": {
         "en": "CLI tool to help with epoch timestamps.",
@@ -119,6 +137,8 @@
     },
     {
       "name": "REST CLI",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Go", "CLI", "Tool"],
       "description": {
         "en": "REST CLI + TUI - A way to test your API.",
@@ -131,6 +151,8 @@
     },
     {
       "name": "Debug CLI",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Tool", "Lib"],
       "description": {
         "en": "A reusable TypeScript/Deno module for creating interactive CLI applications with customizable key bindings and progress bars.",
@@ -144,6 +166,8 @@
     },
     {
       "name": "Petite DB",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Database", "Lib"],
       "description": {
         "en": "The minimalistic NoSQL in-memory/on-disk database.",
@@ -156,6 +180,8 @@
     },
     {
       "name": "Xorshift32",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Lib"],
       "description": {
         "en": "TypeScript implementation of xorshift32.",
@@ -168,6 +194,8 @@
     },
     {
       "name": "Minilog",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Lib"],
       "description": {
         "en": "The minimalistic logging companion for Deno projects.",
@@ -180,6 +208,8 @@
     },
     {
       "name": "Rest-O-Frigo",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": [
         "TypeScript",
         "Deno",
@@ -201,6 +231,8 @@
     },
     {
       "name": "Booklet",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Tool", "CLI"],
       "description": {
         "en": "Command to split and reorder PDF pages into signatures to print the outputted PDF in a booklet style.",
@@ -212,6 +244,8 @@
     },
     {
       "name": "Star Notifier",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Application", "Container", "MongoDB"],
       "description": {
         "en": "Star Citizen crawler to send notifications when CCU WB are detected.",
@@ -223,6 +257,8 @@
     },
     {
       "name": "Island Generator",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Application", "Container"],
       "description": {
         "en": "TypeScript map generator in 2D and 3D using Perlin noise.",
@@ -234,6 +270,8 @@
     },
     {
       "name": "MDPlanner",
+      "status": "development",
+      "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Application", "Markdown"],
       "description": {
         "en": "A modern task management system that uses markdown files as the database, built with Deno and TypeScript.",
@@ -246,6 +284,8 @@
     },
     {
       "name": "Speech to Command",
+      "status": "poc",
+      "statusDate": "2026-02-15",
       "tags": ["Python", "Tool", "LLM", "STT"],
       "description": {
         "en": "Speech to Text - Using Whisper and pyautogui to control the machine.",
@@ -258,6 +298,8 @@
     },
     {
       "name": "Ollama Mattermost",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Application", "LLM", "Container"],
       "description": {
         "en": "Chatbot using LangChain with Ollama chat and Mattermost.",
@@ -269,6 +311,8 @@
     },
     {
       "name": "Apotheos Game",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": [
         "TypeScript",
         "Game",
@@ -287,6 +331,8 @@
     },
     {
       "name": "Ma Future Maison",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["Application", "VueJS", "Javascript", "Container"],
       "description": {
         "en": "Application to offer services such as budget, financial ideas, calculators, etc.",
@@ -298,6 +344,8 @@
     },
     {
       "name": "Pixel It",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["Application", "TypeScript", "Deno", "Container"],
       "description": {
         "en": "Web-based tool to pixelate images.",
@@ -310,6 +358,8 @@
     },
     {
       "name": "Botnet As A Service (bnaas-ce)",
+      "status": "testing",
+      "statusDate": "2026-02-15",
       "tags": ["Application", "TypeScript", "Deno", "Container", "Tool", "CLI"],
       "description": {
         "en": "A powerful, flexible graph execution engine for Deno that supports HTTP requests, conditions, string interpolation, data manipulation, and custom functions. Perfect for building complex automation workflows, API orchestration, and data processing pipelines.",
@@ -322,6 +372,8 @@
     },
     {
       "name": "Noditor - Graph",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Lib", "Tool"],
       "description": {
         "en": "A modular graph data processing toolkit with chainable pipelines, reusable processors, and utilities for filtering, transforming, and applying custom formulas to nodes and edges, built with graphology.",
@@ -335,6 +387,8 @@
     },
     {
       "name": "Orchestrator",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": [
         "TypeScript",
         "Deno",
@@ -354,6 +408,8 @@
     },
     {
       "name": "Minimal Doc",
+      "status": "development",
+      "statusDate": "2026-02-15",
       "tags": ["Go", "CLI", "Tool", "Application"],
       "description": {
         "en": "A modern, minimal static site generator for documentation written in Go.",
@@ -366,6 +422,8 @@
     },
     {
       "name": "Webux Lab",
+      "status": "production",
+      "statusDate": "2026-02-15",
       "tags": ["Application", "Deno", "Application", "Container"],
       "description": {
         "en": "Dynamic blog powered by Deno/TypeScript with on-the-fly Markdown-to-HTML conversion.",
