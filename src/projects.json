@@ -421,6 +421,22 @@
       }
     },
     {
+      "name": "Firegen",
+      "status": "production",
+      "statusDate": "2026-02-16",
+      "tags": ["JavaScript", "Application", "Container", "Tool"],
+      "screenshots": [],
+      "videos": [],
+      "links": {
+        "website": "https://firegen.dev",
+        "github": "https://github.com/studiowebux/firegen"
+      },
+      "description": {
+        "en": "YAML-driven firewalld configuration generator with variables, loops, and rule groups.",
+        "fr": "Générateur de configuration firewalld piloté par YAML avec variables, boucles et groupes de règles."
+      }
+    },
+    {
       "name": "Webux Lab",
       "status": "production",
       "statusDate": "2026-02-15",
