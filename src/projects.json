@@ -421,6 +421,21 @@
       }
     },
     {
+      "name": "Dockward",
+      "status": "production",
+      "statusDate": "2026-02-17",
+      "tags": ["Go", "Application", "CLI", "Container", "Tool"],
+      "screenshots": [],
+      "videos": [],
+      "links": {
+        "github": "https://github.com/studiowebux/dockward"
+      },
+      "description": {
+        "en": "Docker deployment automation with registry polling, auto-rollback, container health monitoring, auto-healing, and notifications via Discord, email, or webhooks.",
+        "fr": "Automatisation de déploiement Docker avec surveillance de registre, rollback automatique, surveillance de la santé des conteneurs, auto-guérison et notifications via Discord, courriel ou webhooks."
+      }
+    },
+    {
       "name": "Firegen",
       "status": "production",
       "statusDate": "2026-02-16",
