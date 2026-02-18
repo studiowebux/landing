@@ -273,6 +273,8 @@
       "status": "development",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Application", "Markdown"],
+      "screenshots": [],
+      "videos": ["https://www.youtube.com/watch?v=Io6TRcySVaU"],
       "description": {
         "en": "A modern task management system that uses markdown files as the database, built with Deno and TypeScript.",
         "fr": "Un système moderne de gestion de tâches qui utilise des fichiers markdown comme base de données, construit avec Deno et TypeScript."
@@ -428,6 +430,7 @@
       "screenshots": [],
       "videos": [],
       "links": {
+        "website": "https://dockward.com",
         "github": "https://github.com/studiowebux/dockward"
       },
       "description": {
