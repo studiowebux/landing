@@ -4,6 +4,12 @@ services:
     image: localhost:5000/studiowebux:latest
     container_name: studiowebux-landing
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:80/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
     environment:
       - VIRTUAL_HOST=studiowebux.com,www.studiowebux.com
       - VIRTUAL_PORT=80
