@@ -1,10 +1,9 @@
 services:
   studiowebux-landing:
-    image: nginx:1.29.2-perl
+    build: .
+    image: localhost:5000/studiowebux:latest
     container_name: studiowebux-landing
     restart: unless-stopped
-    volumes:
-      - ./src/:/usr/share/nginx/html:ro
     environment:
       - VIRTUAL_HOST=studiowebux.com,www.studiowebux.com
       - VIRTUAL_PORT=80
