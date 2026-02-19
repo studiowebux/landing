@@ -107,53 +107,11 @@
     align-items: center;
 }
 
-/* Status filter button colors when active */
-.status-filter-tag.status-production.active {
-    background: #2d8a4e;
-    border-color: #2d8a4e;
-    color: #fff;
-}
-
-.status-filter-tag.status-design.active {
-    background: #7c3aed;
-    border-color: #7c3aed;
-    color: #fff;
-}
-
-.status-filter-tag.status-poc.active {
-    background: #d97706;
-    border-color: #d97706;
-    color: #fff;
-}
-
-.status-filter-tag.status-development.active {
-    background: #2563eb;
-    border-color: #2563eb;
-    color: #fff;
-}
-
-.status-filter-tag.status-maintenance.active {
-    background: #6b7280;
-    border-color: #6b7280;
-    color: #fff;
-}
-
-.status-filter-tag.status-testing.active {
-    background: #0891b2;
-    border-color: #0891b2;
-    color: #fff;
-}
-
-.status-filter-tag.status-cancelled.active {
-    background: #dc2626;
-    border-color: #dc2626;
-    color: #fff;
-}
-
-.status-filter-tag.status-inactive.active {
-    background: #4b5563;
-    border-color: #4b5563;
-    color: #fff;
+/* Status filter buttons use the same active style as tag filters */
+.status-filter-tag.active {
+    background: var(--primary-yellow);
+    border-color: var(--primary-yellow);
+    color: var(--black);
 }
 
 /* Project card header with status badge */
@@ -169,7 +127,7 @@
     margin-bottom: 0;
 }
 
-/* Status badge on project cards */
+/* Status badge on project cards — monochrome style */
 .project-status-badge {
     display: inline-block;
     padding: 0.25rem 0.625rem;
@@ -180,46 +138,9 @@
     white-space: nowrap;
     flex-shrink: 0;
     margin-top: 0.35rem;
-}
-
-.project-status-badge.status-production {
-    background: #2d8a4e;
-    color: #fff;
-}
-
-.project-status-badge.status-design {
-    background: #7c3aed;
-    color: #fff;
-}
-
-.project-status-badge.status-poc {
-    background: #d97706;
-    color: #fff;
-}
-
-.project-status-badge.status-development {
-    background: #2563eb;
-    color: #fff;
-}
-
-.project-status-badge.status-maintenance {
-    background: #6b7280;
-    color: #fff;
-}
-
-.project-status-badge.status-testing {
-    background: #0891b2;
-    color: #fff;
-}
-
-.project-status-badge.status-cancelled {
-    background: #dc2626;
-    color: #fff;
-}
-
-.project-status-badge.status-inactive {
-    background: #4b5563;
-    color: #fff;
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--text-secondary);
 }
 
 /* Status date */
