@@ -466,6 +466,21 @@
       "links": {
         "website": "https://webuxlab.com"
       }
+    },
+    {
+      "name": "Ollama WebUI",
+      "status": "production",
+      "statusDate": "2026-02-22",
+      "tags": ["JavaScript", "HTML", "Application", "LLM", "Container"],
+      "screenshots": [],
+      "videos": [],
+      "links": {
+        "github": "https://github.com/studiowebux/ollama-webui"
+      },
+      "description": {
+        "en": "Minimal black and white chat interface for Ollama with streaming, conversation branching, web search via SearXNG, and text-to-speech via Chatterbox.",
+        "fr": "Interface de chat minimaliste noir et blanc pour Ollama avec streaming, ramification des conversations, recherche web via SearXNG et synthèse vocale via Chatterbox."
+      }
     }
   ]
 }

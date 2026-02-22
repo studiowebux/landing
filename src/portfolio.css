@@ -125,6 +125,7 @@
 
 .project-header .project-name {
     margin-bottom: 0;
+    min-width: 0;
 }
 
 /* Status badge on project cards — monochrome style */
