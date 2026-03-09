@@ -1,7 +1,24 @@
 {
   "projects": [
     {
+      "name": "Zurm",
+      "category": "apps",
+      "status": "production",
+      "statusDate": "2026-03-08",
+      "tags": ["Go", "Ebitengine", "Application", "macOS"],
+      "screenshots": [],
+      "videos": [],
+      "links": {
+        "github": "https://github.com/studiowebux/zurm"
+      },
+      "description": {
+        "en": "GPU-rendered terminal emulator for macOS built with Go and Ebitengine.",
+        "fr": "Émulateur de terminal rendu par GPU pour macOS, construit avec Go et Ebitengine."
+      }
+    },
+    {
       "name": "Proxy TUI",
+      "category": "tools",
       "status": "testing",
       "statusDate": "2026-02-15",
       "tags": ["Go", "Application", "CLI"],
@@ -18,6 +35,7 @@
     },
     {
       "name": "SSH TUI",
+      "category": "tools",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["Go", "Application", "CLI"],
@@ -34,6 +52,7 @@
     },
     {
       "name": "Ollama TUI",
+      "category": "incubator",
       "status": "design",
       "statusDate": "2026-02-15",
       "tags": ["Go", "Application", "CLI", "LLM"],
@@ -49,6 +68,7 @@
     },
     {
       "name": "Play or Host",
+      "category": "games",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["iOS", "Application", "Swift"],
@@ -64,6 +84,7 @@
     },
     {
       "name": "Run Axis - Arduino",
+      "category": "games",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["Arduino", "Game"],
@@ -79,6 +100,7 @@
     },
     {
       "name": "Kube Buddy",
+      "category": "tools",
       "status": "design",
       "statusDate": "2026-02-15",
       "tags": ["Go", "CLI", "Application"],
@@ -95,6 +117,7 @@
     },
     {
       "name": "Obsidian Spotify Link",
+      "category": "tools",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Obsidian"],
@@ -110,6 +133,7 @@
     },
     {
       "name": "Obsidian FinDoc",
+      "category": "tools",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Obsidian"],
@@ -124,6 +148,7 @@
     },
     {
       "name": "Time Ago",
+      "category": "tools",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Go", "CLI", "Tool"],
@@ -137,6 +162,7 @@
     },
     {
       "name": "REST CLI",
+      "category": "apps",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Go", "CLI", "Tool"],
@@ -151,6 +177,7 @@
     },
     {
       "name": "Debug CLI",
+      "category": "libs",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Tool", "Lib"],
@@ -166,6 +193,7 @@
     },
     {
       "name": "Petite DB",
+      "category": "libs",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Database", "Lib"],
@@ -180,6 +208,7 @@
     },
     {
       "name": "Xorshift32",
+      "category": "libs",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Lib"],
@@ -194,6 +223,7 @@
     },
     {
       "name": "Minilog",
+      "category": "libs",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Lib"],
@@ -208,6 +238,7 @@
     },
     {
       "name": "Rest-O-Frigo",
+      "category": "apps",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": [
@@ -231,6 +262,7 @@
     },
     {
       "name": "Booklet",
+      "category": "tools",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Tool", "CLI"],
@@ -244,6 +276,7 @@
     },
     {
       "name": "Star Notifier",
+      "category": "apps",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Application", "Container", "MongoDB"],
@@ -257,6 +290,7 @@
     },
     {
       "name": "Island Generator",
+      "category": "games",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Application", "Container"],
@@ -270,6 +304,7 @@
     },
     {
       "name": "MDPlanner",
+      "category": "apps",
       "status": "development",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Application", "Markdown"],
@@ -286,6 +321,7 @@
     },
     {
       "name": "Speech to Command",
+      "category": "tools",
       "status": "poc",
       "statusDate": "2026-02-15",
       "tags": ["Python", "Tool", "LLM", "STT"],
@@ -300,6 +336,7 @@
     },
     {
       "name": "Ollama Mattermost",
+      "category": "tools",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Application", "LLM", "Container"],
@@ -313,6 +350,7 @@
     },
     {
       "name": "Apotheos Game",
+      "category": "games",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": [
@@ -333,6 +371,7 @@
     },
     {
       "name": "Ma Future Maison",
+      "category": "apps",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["Application", "VueJS", "Javascript", "Container"],
@@ -346,6 +385,7 @@
     },
     {
       "name": "Pixel It",
+      "category": "apps",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["Application", "TypeScript", "Deno", "Container"],
@@ -360,6 +400,7 @@
     },
     {
       "name": "Botnet As A Service (bnaas-ce)",
+      "category": "libs",
       "status": "testing",
       "statusDate": "2026-02-15",
       "tags": ["Application", "TypeScript", "Deno", "Container", "Tool", "CLI"],
@@ -374,6 +415,7 @@
     },
     {
       "name": "Noditor - Graph",
+      "category": "libs",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["TypeScript", "Deno", "Lib", "Tool"],
@@ -389,6 +431,7 @@
     },
     {
       "name": "Orchestrator",
+      "category": "apps",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": [
@@ -410,6 +453,7 @@
     },
     {
       "name": "Minimal Doc",
+      "category": "tools",
       "status": "development",
       "statusDate": "2026-02-15",
       "tags": ["Go", "CLI", "Tool", "Application"],
@@ -424,6 +468,7 @@
     },
     {
       "name": "Dockward",
+      "category": "tools",
       "status": "production",
       "statusDate": "2026-02-17",
       "tags": ["Go", "Application", "CLI", "Container", "Tool"],
@@ -440,6 +485,7 @@
     },
     {
       "name": "Firegen",
+      "category": "apps",
       "status": "production",
       "statusDate": "2026-02-16",
       "tags": ["JavaScript", "Application", "Container", "Tool"],
@@ -456,6 +502,7 @@
     },
     {
       "name": "Webux Lab",
+      "category": "content",
       "status": "production",
       "statusDate": "2026-02-15",
       "tags": ["Application", "Deno", "Application", "Container"],
@@ -469,6 +516,7 @@
     },
     {
       "name": "Ollama WebUI",
+      "category": "apps",
       "status": "production",
       "statusDate": "2026-02-22",
       "tags": ["JavaScript", "HTML", "Application", "LLM", "Container"],
