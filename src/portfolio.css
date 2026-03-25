@@ -168,6 +168,8 @@
     background: var(--bg-secondary);
     padding: 30px;
     border-left: 4px solid var(--primary-yellow);
+    min-width: 0;
+    overflow: hidden;
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
@@ -182,6 +184,7 @@
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: var(--text-primary);
+    overflow-wrap: break-word;
 }
 
 .project-tags {
@@ -281,6 +284,7 @@
     color: var(--text-secondary);
     line-height: 1.6;
     font-size: 1rem;
+    overflow-wrap: break-word;
 }
 
 /* Error and No Results Messages */
